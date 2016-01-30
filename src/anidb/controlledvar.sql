@@ -1,0 +1,12 @@
+CREATE TABLE anime ( name VARCHAR(20), seasons INT(1), table_name VARCHAR(20), PRIMARY KEY(name), FOREIGN KEY(name) REFERENCES seasons.name );
+INSERT INTO anime ( name, seasons, table_name ) VALUES ( 'Kuroko no Basuke', 3, 'kurobas' );
+INSERT INTO anime ( name, seasons, table_name ) VALUES ( 'Uta no Prince Sama', 3, 'utapri' );
+INSERT INTO anime ( name, seasons, table_name ) VALUES ( 'Ansatsu Kyoushitsu', 1, 'ansatsu' );
+INSERT INTO anime ( name, seasons, table_name ) VALUES ( 'Owari no Seraph', 1, 'owari' );
+INSERT INTO anime ( name, seasons, table_name ) VALUES ( 'Kekkai Sensen', 1, 'kekkai' );
+CREATE TABLE seasons ( name VARCHAR(20), seasons INT(1), season_one INT(2), season_two INT(2), season_three INT(3), total INT(4), PRIMARY KEY(name), FOREIGN KEY(name) REFERENCES anime.name );
+INSERT INTO seasons ( name, seasons, season_one, season_two, season_three, total ) VALUES ( 'Kuroko no Basuke', 3, 25, 25, 15, 65 );
+INSERT INTO seasons ( name, seasons, season_one, season_two, season_three, total ) VALUES ( 'Uta no Prince Sama', 3, 13, 13, 4, 30 );
+INSERT INTO seasons ( name, seasons, season_one, season_two, season_three, total ) VALUES ( 'Ansatsu Kyoushitsu', 1, 14, 0, 0, 14 );
+INSERT INTO seasons ( name, seasons, season_one, season_two, season_three, total ) VALUES ( 'Owari no Seraph', 1, 4, 0, 0, 4 );
+INSERT INTO seasons ( name, seasons, season_one, season_two, season_three, total ) VALUES ( 'Kekkai Sensen', 1, 4, 0, 0, 4 );

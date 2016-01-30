@@ -1,0 +1,50 @@
+/* style sheet for desktop */
+
+@charset "utf-8";
+
+@import "desktop.css";
+
+#content {
+    margin: auto;
+    width: 95%;
+}
+
+/* Navigation */
+#navigation {s
+    float: none;
+}
+
+ul {
+    width: 95%;
+}
+
+li.nav {
+    margin-left: 3s%;
+    margin-right: 3%;
+    font-size: 14px;
+}
+
+/* Home Page Content */
+p.topoverlay {
+    width: 95%;
+}
+
+p.botoverlay {
+    width: 95%;
+    top: 657px;
+}
+
+h2 {
+    font-size: 12px;
+    margin: auto;
+    padding-right: 5%;
+}
+
+h2.floatright {
+    margin-right: -11%;
+}
+
+/* History */
+#cave {
+    width: 22%;
+}

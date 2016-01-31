@@ -1,6 +1,17 @@
+@font-face {
+	font-family: "Bebas Kai Regular";
+	src: url('../fonts/bebas-kai-regular.otf');
+}
+
+@font-face {
+	font-family: "Valerie Hand";
+	src: url('../fonts/valerie-hand.ttf');
+}
+
 body {
 	width: 60%;
 	margin: auto;
+	font-family: "Bebas Kai Regular";
 }
 
 .jumbotron {
@@ -57,10 +68,10 @@ a:hover {
 	height: 200px;
 	border-radius: 20px;
 	margin: 30px;
-	font-size: 18px;
+	font-size: 24px;
 	white-space: normal;
 	word-break: break-word;
-	padding-top: 30%;
+	padding-top: 25%;
 }
 
 .directory {
@@ -88,6 +99,27 @@ a:hover {
 	border-radius: 20px;
 	margin-right: 50px;
 	margin-left: 50px;
+	font-size: 32px;
+	padding-top: 25%;
+}
+
+.nav > li > a {
 	font-size: 18px;
-	padding-top: 29%;
+	color: white !important;
+}
+
+.nav > li.active > a {
+	background-color: #cfd9e2 !important;
+}
+
+.navbar {
+	background-color: #374b5d;
+	border-color: #374b5d;
+}
+
+.navbar-brand {
+	font-family: "Valerie Hand";
+	font-size: 60px;
+	margin-top: -2px;
+	color: white !important;
 }

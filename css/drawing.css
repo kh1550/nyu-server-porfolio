@@ -8,3 +8,9 @@
 	border-color: white;
 	color: white;
 }
+
+.logo {
+	width: 40px;
+	height: 40px;
+	margin-top: -10px;
+}

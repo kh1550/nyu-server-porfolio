@@ -1,0 +1,31 @@
+#face:hover > path, #body:hover > path, #foot:hover > path {
+	fill: #ff9933;
+}
+
+#cheeks:hover > path, #ears-inner:hover > path, #tail:hover > path {
+	fill: #ccb954;
+}
+
+#ears:hover > path {
+	fill: #56462f;
+}
+
+.wrapper {
+	text-align: center;
+}
+
+.jumbotron {
+  background-color: #cfd9e2;
+  border-color: #cfd9e2;
+  width: 1100px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-top: -10px;
+}
+
+.closer {
+  margin-top: -20px;
+}

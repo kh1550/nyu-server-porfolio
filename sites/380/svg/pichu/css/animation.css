@@ -1,0 +1,98 @@
+.svg {
+	z-index: 2;
+	position: absolute;
+	margin-left: 100px;
+}
+
+#pokeball-red, #pokeball-white {
+	transition-property: transform;
+	transition-duration: 3s;
+}
+
+#pokeball-red:hover {
+	transform: translateY(-150px);
+}
+
+#pokeball-white:hover {
+	transform: translateY(150px);
+}
+
+#luxray {
+	position: relative;
+	top: 75px;
+	left: 175px;
+	width: 150px;
+	height: 150px;
+	z-index: 1;
+}
+
+@keyframes roll {
+	0% {transform: rotateX(0deg) rotateY(0deg);}
+	33% {transform: rotateX(360deg) rotateY(360deg);}
+	66% {transform: rotateZ(180deg) rotateX(-90deg);}
+	100% {transform: rotateY(-180deg);}
+}
+
+#die-container {
+	width: 200px;
+	margin-left: 600px;
+	margin-top: 0px;
+	perspective: 800px;
+	perspective-origin: 200px 200px;
+}
+
+.die {
+	position: relative;
+	width: 200px;
+	transform-style: preserve-3d;
+	animation-name: roll;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+.die div {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-size: 100px 100px;
+}
+
+.one {
+	transform: translateZ(-50px) rotateY(180deg);
+	background-image: url('../src/one.png');
+}
+
+.two {
+	transform: rotateY(-270deg) translateX(50px);
+	transform-origin: top right;
+	background-image: url('../src/two.png');
+}
+
+.three {
+	transform: rotateY(270deg) translateX(-50px);
+	transform-origin: top left;
+	background-image: url('../src/three.png');
+}
+
+.four {
+	transform: rotateX(-90deg) translateY(-50px);
+	transform-origin: top center;
+	background-image: url('../src/four.png');
+}
+
+.five {
+	transform: rotateX(90deg) translateY(50px);
+	transform-origin: bottom center;
+	background-image: url('../src/five.png');
+}
+
+.six {
+	transform: translateZ(50px);
+	background-image: url('../src/six.png');
+}
+
+.desc {
+	text-align: center;
+	margin-top: 200px;
+	margin-bottom: 0px;
+}
